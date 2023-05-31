@@ -28,7 +28,7 @@ class Database(ABC):
             self._mysqli.commit()
             
         except mysql.connector.Error as e:
-            print(f"Error: {e}")
+            pass
     
     def close(self):
         self._cursor.close()
